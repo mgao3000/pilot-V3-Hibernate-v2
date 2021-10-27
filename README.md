@@ -1,4 +1,4 @@
-# Pilot V4  Hibernate - V2
+# Pilot V3  Hibernate - V2
 The purpose of this sample project (V4) is to show how to handle one-to-many 
 and many-to-many relationship using Hibernate API. The sample 
 code is still against the three dummy tables (MAJOR, STUDENT, PROJECT) 
