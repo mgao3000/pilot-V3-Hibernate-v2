@@ -54,7 +54,7 @@ public abstract class AbstractDaoTest {
     }
 
     protected void assertStudents(Student randomStudent, Student retrievedStudent) {
-        assertEquals(randomStudent.getId(), retrievedStudent.getId());
+        assertEquals("both student IDs should be equal", randomStudent.getId(), retrievedStudent.getId());
         assertEquals(randomStudent.getMajor().getId(), retrievedStudent.getMajor().getId());
         assertEquals(randomStudent.getLoginName(), retrievedStudent.getLoginName());
         assertEquals(randomStudent.getPassword(), retrievedStudent.getPassword());
