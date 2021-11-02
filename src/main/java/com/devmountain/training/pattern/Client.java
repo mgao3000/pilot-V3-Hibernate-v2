@@ -4,14 +4,21 @@ public class Client {
 
     public static void main(String[] args) {
 
-        HelloWorldSingleton helloNate = HelloWorldSingleton.getInstance();
+        HelloWorldSingleton helloEric = HelloWorldSingleton.getInstance();
 
-        helloNate.sayHello("Nate");
+        helloEric.sayHello("Eric");
 
 
-        HelloWorldSingleton helloMo = HelloWorldSingleton.getInstance();
+        HelloWorldSingleton helloJennifer = HelloWorldSingleton.getInstance();
 
-        helloMo.sayHello("Mo");
+        helloJennifer.sayHello("Jennifer");
+
+        HelloWorldSingleton helloLaura = HelloWorldSingleton.getInstance();
+
+        helloLaura.sayHello("laura");
+
+        if(helloEric == helloJennifer)
+            System.out.println(("helloeric is the same a helloJennifer"));
 
     }
 }
