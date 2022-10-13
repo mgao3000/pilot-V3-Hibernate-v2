@@ -58,6 +58,7 @@ public class Student  {
 //    @ManyToMany(mappedBy = "students", cascade = {CascadeType.REFRESH}, fetch = FetchType.EAGER)
 //    @ManyToMany(cascade = {CascadeType.REFRESH}, fetch = FetchType.LAZY)
     @ManyToMany(fetch = FetchType.LAZY)
+//    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(name = "student_project",
             joinColumns = { @JoinColumn(name = "student_id") },
             inverseJoinColumns = { @JoinColumn(name = "project_id") }

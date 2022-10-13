@@ -37,7 +37,8 @@ public class HelloWorldTest {
         assertNotNull(greetingText);
     }
 
-    @Test
+//    @Test
+    @Ignore
     public void addNumberTest() {
 
     }

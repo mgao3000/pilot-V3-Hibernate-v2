@@ -9,6 +9,7 @@ public class HelloWorldSingleton {
 
     // No.2 create a private static class variable to itself
     private static HelloWorldSingleton singleton = new HelloWorldSingleton();
+//    private static HelloWorldSingleton singleton;
 
     //No3. create a public static method to return HelloWorldSingleton instance
     public static HelloWorldSingleton getInstance() {

@@ -1,6 +1,28 @@
 package com.devmountain.training.pattern;
 
-public class HelloWorld {
+public class HelloWorld implements Hello {
+    private String myName;
+
+    /*
+     * No.1 thing to do, private constructor
+     */
+//    private HelloWorld() {}
+//    public HelloWorld() {    }
+
+    /*
+     * No.2 create a private static class variable to itself
+     */
+//    private static HelloWorld singletonHelloWorld = new HelloWorld();
+
+    /*
+     * No3. create a public static method to return HelloWorld instance
+     */
+//    public static HelloWorld getInstance() {
+////        if(singleton == null)
+////            singleton = new HelloWorld();
+//        return singletonHelloWorld;
+//    }
+
 
     public void sayHello(String name) {
 

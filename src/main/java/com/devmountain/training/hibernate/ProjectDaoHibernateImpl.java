@@ -23,7 +23,7 @@ public class ProjectDaoHibernateImpl extends AbstractDaoHibernateImpl implements
     private Logger logger = LoggerFactory.getLogger(ProjectDaoHibernateImpl.class);
 
     @Override
-    public Project save(Project project) {
+    public Project save(Project project)  {
         Transaction transaction = null;
         SessionFactory sessionFactory = HibernateUtil.getSessionFactory();
         Session session = sessionFactory.openSession();
@@ -73,7 +73,7 @@ public class ProjectDaoHibernateImpl extends AbstractDaoHibernateImpl implements
     /**
      * Using HQL to do deletion
      */
-    public boolean deleteByName(String projectName) {
+    public boolean deleteByName(String projectName)  {
         int deleteCount = 0;
         Project retrievedProject = getProjectWithAssociatedStudentsByName(projectName);
         if(retrievedProject == null) {

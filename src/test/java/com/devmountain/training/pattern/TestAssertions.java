@@ -14,8 +14,8 @@ public class TestAssertions {
         String str3 = null;
         String str4 = "abc";
         String str5 = "abc";
-        int val1 = 50;
-        int val2 = 6;
+        int val1 = 10;  //50;
+        int val2 = 20;  //6;
         String[] expectedArray = {"one", "two", "three"};
         String[] resultArray =  {"one", "two", "three"};
 
